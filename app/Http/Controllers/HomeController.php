@@ -91,10 +91,10 @@ class HomeController extends Controller
 	}
 	public function punish_bans()
 	{
-		$ban = new \App\Models\Ban();
+		$ban = (new Ban())->get();
 		
         $params = [
-            'ban' => $ban->SimplePaginate(5),
+            'ban' => $ban
         ];
 		return view('pages.category.ban', $params);
 	} 

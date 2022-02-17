@@ -25,10 +25,6 @@
                         </a>
                     </div>
 					<p class="logo-sidebar">Rainford <span>Protect</span> Panel</p>
-                    <div class="nk-menu-trigger mr-n2">
-                        <a href="#" class="nk-nav-toggle nk-quick-nav-icon d-xl-none" data-target="sidebarMenu"><em class="icon ni ni-arrow-left"></em></a>
-                        <a href="#" class="nk-nav-compact nk-quick-nav-icon d-none d-xl-inline-flex" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
-                    </div>
                 </div><!-- .nk-sidebar-element -->
                 <div class="nk-sidebar-element">
                     <div class="nk-sidebar-content">
@@ -38,7 +34,7 @@
                                     <h6 class="overline-title text-primary-alt">Главная</h6>
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-item">
-                                    <a href="home" class="nk-menu-link">
+                                    <a href="/home" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-dashlite"></em></span>
                                         <span class="nk-menu-text">Главная страница</span>
                                     </a>
@@ -47,22 +43,22 @@
                                     <h6 class="overline-title text-primary-alt">Админ центр</h6>
                                 </li><!-- .nk-menu-heading -->
                                 <li class="nk-menu-item">
-                                    <a href="players" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-b-uc"></em></span>
+                                    <a href="/players" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-server"></em></span>
                                         <span class="nk-menu-text">Мониторинг</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
 								@if(Auth::user()->role == 2 || 3)
 								<li class="nk-menu-item">
-                                    <a href="accounts" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-b-uc"></em></span>
+                                    <a href="/accounts" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
                                         <span class="nk-menu-text">Менеджер пользователей</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
 								@endif
 								<li class="nk-menu-item">
-                                    <a href="users" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-b-uc"></em></span>
+                                    <a href="/users" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-user-fill"></em></span>
                                         <span class="nk-menu-text">Менеджер игроков</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
@@ -70,14 +66,14 @@
                                     <h6 class="overline-title text-primary-alt">Администрация</h6>
                                 </li><!-- .nk-menu-heading -->
                                 <li class="nk-menu-item">
-                                    <a href="actions" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-b-uc"></em></span>
+                                    <a href="/actions" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-package-fill"></em></span>
                                         <span class="nk-menu-text">Действия администрации</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
 								<li class="nk-menu-item">
-                                    <a href="punish" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-view-col"></em></span>
+                                    <a href="/punish" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-card-view"></em></span>
                                         <span class="nk-menu-text">Выдача наказаний</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
@@ -85,7 +81,7 @@
                                     <h6 class="overline-title text-primary-alt">Игроки</h6>
                                 </li><!-- .nk-menu-heading -->
                                 <li class="nk-menu-item">
-                                    <a href="players" class="nk-menu-link">
+                                    <a href="/players" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-b-uc"></em></span>
                                         <span class="nk-menu-text">Действия игроков</span>
                                     </a>

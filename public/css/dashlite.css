@@ -16205,8 +16205,7 @@ body.dark-mode.ui-shady, body.dark-mode.ui-clean, body.dark-mode.bg-lighter, .du
 @media (max-width: 576px) { .dark-mode .nk-block-tools-toggle .toggle-expand-content { background-color: #212d3d; } }
 
 .logo-sidebar {
-    margin-top: 25px;
-    font-size: 16px;
+    font-size: 19px;
 	font-weight: bold;
 	color: white;
 }
@@ -16215,7 +16214,7 @@ body.dark-mode.ui-shady, body.dark-mode.ui-clean, body.dark-mode.bg-lighter, .du
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-size: 900% 20%;
-	font-size: 17px;
+	font-size: 19px;
 	font-weight: bold;
 	color: #1000f2;
 	animation: AnimNic 10s ease infinite;

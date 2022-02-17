@@ -13,6 +13,64 @@
 				</div>
 				<div class="nk-block">
 					<div class="row g-gs">
+						<div class="col-xxl-3 col-sm-6">
+							<div class="card">
+								<div class="nk-ecwg nk-ecwg6">
+									<div class="card-inner">
+										<div class="card-title-group">
+											<div class="card-title">
+												<h6 class="title">Всего пользователей в системе:</h6>
+											</div>
+										</div>
+										<div class="data">
+											<div class="data-group">
+												<div class="amount" style="float: left;"><em class="icon ni ni-users-fill"></em>&nbsp;&nbsp;3</div>
+											</div>
+										</div>
+									</div><!-- .card-inner -->
+								</div><!-- .nk-ecwg -->
+							</div><!-- .card -->
+						</div><!-- .col -->
+						<div class="col-xxl-3 col-sm-6">
+							<div class="card">
+								<div class="nk-ecwg nk-ecwg6">
+									<div class="card-inner">
+										<div class="card-title-group">
+											<div class="card-title">
+												<h6 class="title">Текущий онлайн на сервере:</h6>
+											</div>
+										</div>
+										<div class="data">
+											<div class="data-group">
+												<div class="amount"><em class="icon ni ni-user-fill"></em>&nbsp;&nbsp;2</div>
+											</div>
+										</div>
+									</div><!-- .card-inner -->
+								</div><!-- .nk-ecwg -->
+							</div><!-- .card -->
+						</div><!-- .col -->
+						<div class="col-xxl-3 col-sm-6">
+							<div class="card">
+								<div class="nk-ecwg nk-ecwg6">
+									<div class="card-inner">
+										<div class="card-title-group">
+											<div class="card-title">
+												<h6 class="title">Пользователей ожидает проверки:</h6>
+											</div>
+										</div>
+										<div class="data">
+											<div class="data-group">
+												<div class="amount"><em class="icon ni ni-user-cross-fill"></em>&nbsp;&nbsp;1</div>
+											</div>
+										</div>
+									</div><!-- .card-inner -->
+								</div><!-- .nk-ecwg -->
+							</div><!-- .card -->
+						</div><!-- .col -->
+						<div class="driver"></div>
+						<div class="driver"></div>
+						<div class="driver"></div>
+						<div class="driver"></div>
 						<div class="col-sm-6 col-lg-4 col-xxl-3">
 							<div class="card h-100">
 								<div class="card-inner">
