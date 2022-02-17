@@ -7,6 +7,7 @@ use App\Models\Ban;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Accounts;
 use App\Models\Admin;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -27,7 +28,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+		$user = (new User())->get();
+        $params = [
+          'user' => $user,
+        ];
+        return view('home', $params);
     }
 
 	public function logout(Request $request) {

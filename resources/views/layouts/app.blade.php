@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <!-- Fav Icon  -->
-    <link rel="shortcut icon" href="../images/logo-b.png">
+    <link rel="shortcut icon" href="../images/logo.png">
     <!-- Page Title  -->
-    <title>Rainford Logs | Логи</title>
+    <title>Rainford Protect Panel</title>
     <!-- StyleSheets  -->
-    <link rel="stylesheet" href="./css/dashlite.css?ver=2.9.0">
+    <link rel="stylesheet" href="../css/dashlite.css?ver=2.9.0">
 </head>
 
 <body class="nk-body bg-lighter npc-default has-sidebar no-touch nk-nio-theme dark-mode">
@@ -20,10 +20,11 @@
                 <div class="nk-sidebar-element nk-sidebar-head">
                     <div class="nk-sidebar-brand">
                         <a href="/home" class="logo-link nk-sidebar-logo">
-							<img class="logo-dark logo-img" src="./images/logo-b.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
-                            <img class="logo-small logo-img logo-img-small" src="./images/logo-b.png" srcset="./images/logo-b.png" alt="logo-small">
+							<img class="logo-dark logo-img" src="../images/logo.png" srcset="../images/logo-dark2x.png 2x" alt="logo-dark">
+                            <img class="logo-small logo-img logo-img-small" src="../images/logo.png" srcset="../images/logo.png" alt="logo-small">
                         </a>
                     </div>
+					<p class="logo-sidebar">Rainford <span>Protect</span> Panel</p>
                     <div class="nk-menu-trigger mr-n2">
                         <a href="#" class="nk-nav-toggle nk-quick-nav-icon d-xl-none" data-target="sidebarMenu"><em class="icon ni ni-arrow-left"></em></a>
                         <a href="#" class="nk-nav-compact nk-quick-nav-icon d-none d-xl-inline-flex" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
@@ -51,12 +52,14 @@
                                         <span class="nk-menu-text">Мониторинг</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
+								@if(Auth::user()->role == 2 || 3)
 								<li class="nk-menu-item">
                                     <a href="accounts" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-b-uc"></em></span>
                                         <span class="nk-menu-text">Менеджер пользователей</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
+								@endif
 								<li class="nk-menu-item">
                                     <a href="users" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-b-uc"></em></span>
@@ -104,8 +107,8 @@
                             </div>
                             <div class="nk-header-brand d-xl-none">
                                 <a href="html/index.html" class="logo-link">
-                                    <img class="logo-dark logo-img" src="./images/logo-b.png.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
-                                    <img class="logo-dark logo-img" src="./images/logo-b.png.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
+                                    <img class="logo-dark logo-img" src="./images/logo.png.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
+                                    <img class="logo-dark logo-img" src="./images/logo.png.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
                                 </a>
                             </div><!-- .nk-header-brand -->
                             <div class="nk-header-tools">
@@ -117,7 +120,21 @@
                                                     <em class="icon ni ni-user-alt"></em>
                                                 </div>
                                                 <div class="user-info d-none d-xl-block">
-                                                    <div class="user-status user-status-unverified">{{Auth::user()->role}}</div>
+													@if(Auth::user()->role == 1)
+                                                    <div class="user-status user-status-verified" style="font-weight: bold;">
+														Админстратор
+													</div>
+													@endif
+													@if(Auth::user()->role == 2)
+													<div class="user-status user-status-unverified" style="font-weight: bold;">
+														Руководтсво
+													</div>
+													@endif
+													@if(Auth::user()->role == 3)
+													<div class="user-status user-status-unverified" style="font-weight: bold;">
+														Разработчик
+													</div>
+													@endif
                                                     <div class="user-name dropdown-indicator">{{Auth::user()->name}}</div>
                                                 </div>
                                             </div>
@@ -145,7 +162,7 @@
                 <div class="nk-footer">
                     <div class="container-fluid">
                         <div class="nk-footer-wrap">
-                            <div class="nk-footer-copyright"> &copy; 2022 Rainford Logs. Template by <a href="https://vk.com/alfedovdev" target="_blank">ParkerDev</a>    <em class="icon ni ni-heart-fill"></em>
+                            <div class="nk-footer-copyright"> &copy; 2022 Rainford Protect Panel. Development by <a href="https://vk.com/alfedovdev" target="_blank">ParkerDev</a>    <em class="icon ni ni-heart-fill"></em>
                             </div>
                         </div>
                     </div>

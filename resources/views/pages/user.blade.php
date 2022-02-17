@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+@if(Auth::user()->role == 2 || 3)
 <div class="nk-content ">
     <div class="container-fluid">
         <div class="nk-content-inner">
@@ -161,4 +162,5 @@
 				</div><!-- .modal-content -->
 			</div><!-- .modal-dialog -->    
     </div>
+@endif
 @endsection

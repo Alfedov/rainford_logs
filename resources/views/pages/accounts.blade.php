@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+@if(Auth::user()->role == 2 || 3)
 <div class="nk-content">
 	<div class="nk-block nk-block-lg">
       <div class="nk-block-head">
@@ -69,4 +70,5 @@
       </div>
   </div> 
 </div>
+@endif
 @endsection

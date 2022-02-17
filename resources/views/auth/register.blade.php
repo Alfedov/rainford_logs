@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
-    <title>Rainford Logs | Регистрацмя</title>
+    <title>Rainford Protect Panel</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="../css/app.css?ver=2.9.0">
 </head>

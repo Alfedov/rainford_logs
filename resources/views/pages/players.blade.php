@@ -38,6 +38,7 @@
                           <td class="nk-tb-col nk-tb-col-tools">
                               <ul class="nk-tb-actions gx-1">
                                   <li>
+									@if(Auth::user()->role == 2 || 3)
                                       <div class="drodown">
                                           <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                           <div class="dropdown-menu dropdown-menu-right">
@@ -47,6 +48,7 @@
                                           </div>
                                       </div>
                                   </li>
+								  @endif
                               </ul>
                           </td>
                       </tr><!-- .nk-tb-item  -->
