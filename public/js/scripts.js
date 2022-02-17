@@ -502,16 +502,16 @@
           dom: dom,
           language: {
             search: "",
-            searchPlaceholder: "Type in to Search",
+            searchPlaceholder: "Введите название",
             lengthMenu: "<span class='d-none d-sm-inline-block'>Show</span><div class='form-control-select'> _MENU_ </div>",
             info: "_START_ -_END_ of _TOTAL_",
             infoEmpty: "No records found",
             infoFiltered: "( Total _MAX_  )",
             paginate: {
-              "first": "First",
-              "last": "Last",
-              "next": "Next",
-              "previous": "Prev"
+              "first": "Первое",
+              "last": "Конец",
+              "next": "Вперед",
+              "previous": "Назад"
             }
           }
         },

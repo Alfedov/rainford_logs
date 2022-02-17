@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx" class="nk-body bg-lighter npc-default has-sidebar no-touch nk-nio-theme dark-mode">
+<html lang="zxx" class="js">
 
 <head>
     <meta charset="utf-8">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/dashlite.css?ver=2.9.0">
 </head>
 
-<body class="nk-body bg-lighter npc-default has-sidebar ">
+<body class="nk-body bg-lighter npc-default has-sidebar no-touch nk-nio-theme dark-mode">
     <div class="nk-app-root">
         <!-- main @s -->
         <div class="nk-main ">
