@@ -101,66 +101,90 @@
                 <!--nk block lg-->
             </div>
         </div>
-</div>
-		<div class="modal fade" role="dialog" id="edit{{$user->id}}">
-			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-				<div class="modal-content">
-					<a href="#" class="close" data-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
-					<div class="modal-body modal-body-md">
-						<h5 class="title">Редактирование игрока</h5>
-						<form action="#" class="pt-2">
-							<div class="row gy-4">
-								<div class="col-md-6">
-									<div class="form-group">
-										<label class="form-label" for="name">NickName</label>
-										<input type="text" class="form-control" id="name" name="name" value="{{$user->Name}}" maxlength="100" required placeholder="Введите NickName">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label class="form-label" for="email">Email</label>
-										<input type="email" class="form-control" id="email" value="{{$user->pEmail}}" readonly required placeholder="Введите Email">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label class="form-label" for="game_lvl">Игровой уровень</label>
-										<input type="number" class="form-control" id="game_lvl" name="game_lvl" required maxlength="100" placeholder="Введите уровень">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label class="form-label" for="cash">Деньги</label>
-										<input type="number" class="form-control" id="cash" name="cash" required  placeholder="Введите число">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label class="form-label" for="cash_bank">Деньги [Банк]</label>
-										<input type="number" class="form-control" id="cash_bank" name="cash_bank" required  placeholder="Введите число">
-									</div>
-								</div>	
-								<div class="col-md-6">
-									<div class="form-group">
-										<label class="form-label" for="skin">Скин</label>
-										<input type="number" class="form-control" id="skin" name="skin" required  placeholder="Введите id скина">
-									</div>
-								</div>
-								<div class="col-md-12">
-									<ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
-										<li>
-											<a href="#" class="btn btn-primary">Обновить данные</a>
-										</li>
-										<li>
-											<a href="#" data-dismiss="modal" class="link link-light">Отмена</a>
-										</li>
-									</ul>
+	</div>
+	<div class="modal fade" role="dialog" id="edit{{$user->id}}">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<a href="#" class="close" data-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+				<div class="modal-body modal-body-md">
+					<h5 class="title">Редактирование игрока</h5>
+					<form action="#" class="pt-2">
+						<div class="row gy-4">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="form-label" for="name">NickName</label>
+									<input type="text" class="form-control" id="name" name="name" value="{{$user->Name}}" maxlength="100" readonly required placeholder="Введите NickName">
 								</div>
 							</div>
-						</form>
-					</div><!-- .modal-body -->
-				</div><!-- .modal-content -->
-			</div><!-- .modal-dialog -->    
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="form-label" for="email">Email</label>
+									<input type="email" class="form-control" id="email" value="{{$user->pEmail}}" readonly required placeholder="Введите Email">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="form-label" for="game_lvl">Игровой уровень</label>
+									<input type="number" class="form-control" id="game_lvl" name="game_lvl" value="{{$user->pLevel}}" required maxlength="100" placeholder="Введите уровень">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="form-label" for="cash">Деньги</label>
+									<input type="number" class="form-control" id="cash" name="cash" required  value="{{$user->pCash}}" placeholder="Введите число">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="form-label" for="cash_bank">Деньги [Банк]</label>
+									<input type="number" class="form-control" id="cash_bank" name="cash_bank" value="{{$user->pBank}}" required  placeholder="Введите число">
+								</div>
+							</div>	
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="form-label" for="skin">Скин</label>
+									<input type="number" class="form-control" id="skin" name="skin" value="{{$user->Skin}}" required  placeholder="Введите id скина">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="form-label" for="admin_lvl">Админ уровень</label>
+									<select class="form-select" id="admin_lvl" data-ui="admin_lvl">
+										<option>0</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+										<option>10</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="form-label" for="admin_tag">Админ Тег</label>
+									<input type="number" class="form-control" id="admin_tag" name="admin_tag" value="" placeholder="Введите админ тег">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+									<li>
+										<button href="#" class="btn btn-primary">Обновить данные</button>
+									</li>
+									<li>
+										<a data-dismiss="modal" class="link link-light">Отмена</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div><!-- .modal-body -->
+			</div><!-- .modal-content -->
+		</div><!-- .modal-dialog -->    
     </div>
 @endif
 @endsection

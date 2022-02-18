@@ -25,6 +25,7 @@ Route::get('/logout', [App\Http\Controllers\HomeController::class, 'logout'])->n
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->middleware('verify')->name('home');
 
 Route::get('/actions', [App\Http\Controllers\HomeController::class, 'actions'])->middleware('verify')->name('actions');
+Route::get('/players', [App\Http\Controllers\HomeController::class, 'players'])->middleware('verify')->name('players');
 
 Route::get('/users', [App\Http\Controllers\HomeController::class, 'actions_users'])->middleware('verify')->name('actions_users');
 Route::get('/user/{id}', [App\Http\Controllers\HomeController::class, 'player'])->name('player'); 
@@ -45,6 +46,7 @@ Route::get('/punish/jail', [App\Http\Controllers\HomeController::class, 'punish_
 Route::get('/actions/pm', [App\Http\Controllers\HomeController::class, 'actions_pm'])->middleware('verify')->name('actions_pm');
 Route::get('/actions/login', [App\Http\Controllers\HomeController::class, 'actions_login'])->middleware('verify')->name('actions_login');
 
+Route::get('/monitoring', [App\Http\Controllers\HomeController::class, 'monitoring'])->middleware('verify')->name('monitoring');
 
 // Admin Center
 

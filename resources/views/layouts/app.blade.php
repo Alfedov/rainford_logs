@@ -43,7 +43,7 @@
                                     <h6 class="overline-title text-primary-alt">Админ центр</h6>
                                 </li><!-- .nk-menu-heading -->
                                 <li class="nk-menu-item">
-                                    <a href="/players" class="nk-menu-link">
+                                    <a href="/monitoring" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-server"></em></span>
                                         <span class="nk-menu-text">Мониторинг</span>
                                     </a>

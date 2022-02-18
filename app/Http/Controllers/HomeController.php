@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Accounts;
 use App\Models\Admin;
 use App\Models\User;
+use DB;
 
 class HomeController extends Controller
 {
@@ -28,9 +29,11 @@ class HomeController extends Controller
      */
     public function index()
     {
+		$accounts = (new Accounts())->get();
 		$user = (new User())->get();
-        $params = [
+		$params = [
           'user' => $user,
+		  'accounts' => $accounts
         ];
         return view('home', $params);
     }
@@ -115,5 +118,19 @@ class HomeController extends Controller
 	{
 		$data['user'] = Accounts::findOrFail($id);
 		return view('pages.user', $data);
+	}
+
+	public function monitoring()
+	{
+		$user = (new Accounts())->get();
+		$params = [
+            'users' => $user
+        ];
+		return view('pages.monitoring', $params);
+	}
+
+	public function players()
+	{
+		return view('pages.users');
 	}
 } 
