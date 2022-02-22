@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/wating', function () {
-    return view('wating');
-});
+Route::get('/wating', [App\Http\Controllers\HomeController::class, 'wating'])->middleware('wating')->name('wating');
 
 Auth::routes();
 Route::get('/logout', [App\Http\Controllers\HomeController::class, 'logout'])->name('logout');

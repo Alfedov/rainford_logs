@@ -133,4 +133,9 @@ class HomeController extends Controller
 	{
 		return view('pages.users');
 	}
+
+	public function wating()
+	{
+		return view('wating');
+	}
 } 
