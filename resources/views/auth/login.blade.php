@@ -7,7 +7,7 @@
     <!-- Page Title  -->
     <title>Rainford Protect Panel</title>
     <!-- StyleSheets  -->
-    <link rel="stylesheet" href="./css/app.css?ver=2.9.0">
+    <link rel="stylesheet" href="../../css/app.css?ver=2.9.0">
 </head>
 
 <body class="nk-body bg-lighter npc-default has-sidebar no-touch nk-nio-theme dark-mode">
@@ -66,7 +66,7 @@
                                 <div class="col-lg-6 order-lg-last">
                                     <ul class="nav nav-sm justify-content-center justify-content-lg-end">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://vk.com/alfedovdev">Помощь</a>
+                                            <a class="nav-link" href="https://vk.com/parkerdev">Помощь</a>
                                         </li>
                                     </ul>
                                 </div>

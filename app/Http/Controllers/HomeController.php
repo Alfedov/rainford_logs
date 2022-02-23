@@ -29,7 +29,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-		$accounts = (new Accounts())->get();
+		$accounts = DB::table('accounts')->get();
 		$user = (new User())->get();
 		$params = [
           'user' => $user,
@@ -40,7 +40,7 @@ class HomeController extends Controller
 
 	public function logout(Request $request) {
 		Auth::logout();
-		return redirect('/welcome');
+		return redirect('/login');
 	  }
 
 	public function actions()
@@ -49,9 +49,9 @@ class HomeController extends Controller
 	}
 	public function actions_users()
 	{
-		$user = (new Accounts())->get();
+		$users = DB::table('accounts')->get();
         $params = [
-          'user' => $user
+          'user' => $users
         ];
 		return view('pages.players', $params);
 	}
@@ -73,7 +73,6 @@ class HomeController extends Controller
 		return back();
 	}
 
-
 	public function nickname()
 	{
 		return view('pages.category.nickname');
@@ -94,7 +93,7 @@ class HomeController extends Controller
 	}
 	public function punish_bans()
 	{
-		$ban = (new Ban())->get();
+		$ban = DB::table('bans')->get();
 		
         $params = [
             'ban' => $ban
@@ -122,7 +121,7 @@ class HomeController extends Controller
 
 	public function monitoring()
 	{
-		$user = (new Accounts())->get();
+		$user = DB::table('accounts')->get();
 		$params = [
             'users' => $user
         ];

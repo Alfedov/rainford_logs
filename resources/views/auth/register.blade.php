@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="shortcut icon" href="../images/favicon.png">
     <!-- Page Title  -->
     <title>Rainford Protect Panel</title>
     <!-- StyleSheets  -->
@@ -77,7 +77,7 @@
                                 <div class="col-lg-6 order-lg-last">
                                     <ul class="nav nav-sm justify-content-center justify-content-lg-end">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="https://vk.com/alfedovdev">Помощь</a>
+                                            <a class="nav-link" href="https://vk.com/parkerdev">Помощь</a>
                                         </li>
                                     </ul>
                                 </div>
