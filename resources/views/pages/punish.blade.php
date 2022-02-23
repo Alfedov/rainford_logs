@@ -74,6 +74,51 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-sm-6 col-lg-4 col-xxl-3">
+							<div class="card h-100">
+								<div class="card-inner">
+									<div class="d-flex justify-content-between align-items-start mb-3">
+										<a href="punish/awarn" class="d-flex align-items-center">
+											<div class="user-avatar sq bg-purple"><span>А</span></div>
+											<div class="ml-3">
+												<h6 class="title mb-1">Админ выговоры</h6>
+												<p>Лог админ выговоров</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-4 col-xxl-3">
+							<div class="card h-100">
+								<div class="card-inner">
+									<div class="d-flex justify-content-between align-items-start mb-3">
+										<a href="punish/warn" class="d-flex align-items-center">
+											<div class="user-avatar sq bg-purple"><span>В</span></div>
+											<div class="ml-3">
+												<h6 class="title mb-1">Варны</h6>
+												<p>Лог заварненых игроков</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-4 col-xxl-3">
+							<div class="card h-100">
+								<div class="card-inner">
+									<div class="d-flex justify-content-between align-items-start mb-3">
+										<a href="punish/lwarn" class="d-flex align-items-center">
+											<div class="user-avatar sq bg-purple"><span>Л</span></div>
+											<div class="ml-3">
+												<h6 class="title mb-1">Лидерские выговоры</h6>
+												<p>Лог лидерских выговоров</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
