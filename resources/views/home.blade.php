@@ -99,6 +99,25 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-sm-6 col-lg-4 col-xxl-3">
+							<div class="card h-100">
+								<div class="card-inner">
+									<div class="d-flex justify-content-between align-items-start mb-3">
+										<a class="d-flex align-items-center">
+											<div class="user-avatar sq bg-purple"><span>Н</span></div>
+											<div class="ml-3">
+												<h6 class="title mb-1">Недвижимость</h6>
+												<span class="sub-text">3 Подкатегории</span>
+											</div>
+										</a>
+									</div>
+									<p>Логи недвижимости</p>
+									<ul class="d-flex flex-wrap g-1">
+										<li><span class="badge badge-dim badge-primary">Действия</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

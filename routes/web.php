@@ -37,9 +37,11 @@ Route::get('/state/house', [App\Http\Controllers\HomeController::class, 'house']
 Route::get('/state/car', [App\Http\Controllers\HomeController::class, 'car'])->middleware('verify')->name('car');
 Route::get('/state/business', [App\Http\Controllers\HomeController::class, 'business'])->middleware('verify')->name('business');
 
-
 Route::get('/actions/pm', [App\Http\Controllers\HomeController::class, 'actions_pm'])->middleware('verify')->name('actions_pm');
 Route::get('/actions/login', [App\Http\Controllers\HomeController::class, 'actions_login'])->middleware('verify')->name('actions_login');
 
 Route::get('/monitoring', [App\Http\Controllers\HomeController::class, 'monitoring'])->middleware('verify')->name('monitoring');
 
+Route::get('/accounts', [App\Http\Controllers\HomeController::class, 'accounts'])->name('accounts'); 
+Route::get('/account/{id}', [App\Http\Controllers\HomeController::class, 'account_update'])->name('account_update'); 
+Route::post('/save/{id}', [App\Http\Controllers\HomeController::class, 'save'])->name('save');

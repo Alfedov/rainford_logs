@@ -10,6 +10,7 @@ use App\Models\Admin;
 use App\Models\User;
 use DB;
 
+
 class HomeController extends Controller
 {
     /**
@@ -114,6 +115,35 @@ class HomeController extends Controller
 		return view('wating');
 	}
 
+	public function accounts()
+	{
+		$user = (new User())->get();
+        $params = [
+          'user' => $user
+        ];
+		return view('pages.accounts', $params);
+	}
+	public function account_update($id)
+	{
+		$data['user'] = User::findOrFail($id);
+		return view('pages.account', $data);
+	}
+	public function save(Request $request, $id)
+	{
+		$user = User::findOrFail($id);
+		$user->verifed = ($request->verifed == "1") ? 1 : 0;
+
+		if ($request->role == "1")
+            $user->role = 1;
+        elseif ($request->role == "2")
+            $user->role = 2;
+        elseif ($request->role == "0")
+            $user->role = 0;
+			
+		$user->save();
+        return back()->withSuccess('!');
+	}
+
 	// Наказания
 	public function punish()
 	{
@@ -163,7 +193,7 @@ class HomeController extends Controller
 	{
 		return view('pages.category.business');
 	}
-	public function car()
+	public function cars()
 	{
 		return view('pages.category.car');
 	}
