@@ -113,6 +113,19 @@ class HomeController extends Controller
 		return view('pages.category.jail');
 	} 
 
+	public function punish_warn()
+	{
+		return view('pages.category.warn');
+	}
+	public function punish_awarn()
+	{
+		return view('pages.category.awarn');
+	}
+	public function punish_lwarn()
+	{
+		return view('pages.category.lwarn');
+	}
+
 	public function player($id)
 	{
 		$data['user'] = Accounts::findOrFail($id);
