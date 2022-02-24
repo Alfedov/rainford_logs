@@ -16204,4 +16204,25 @@ body.dark-mode.ui-shady, body.dark-mode.ui-clean, body.dark-mode.bg-lighter, .du
 
 @media (max-width: 576px) { .dark-mode .nk-block-tools-toggle .toggle-expand-content { background-color: #212d3d; } }
 
+.logo-sidebar {
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+}
+.logo-sidebar span {
+  background: linear-gradient(270deg, #01bf3b, #1000f2, #ff00ea, red, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 900% 20%;
+  font-size: 19px;
+  font-weight: bold;
+  color: #1000f2;
+  animation: AnimNic 10s ease infinite;
+}
+@keyframes AnimNic { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
 /*! END @iO */

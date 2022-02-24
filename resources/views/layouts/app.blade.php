@@ -140,17 +140,12 @@
                                                 <div class="user-info d-none d-xl-block">
 													@if(Auth::user()->role == 1)
                                                     <div class="user-status user-status-verified" style="font-weight: bold;">
-														Админстратор
+														Администратор
 													</div>
 													@endif
 													@if(Auth::user()->role == 2)
 													<div class="user-status user-status-unverified" style="font-weight: bold;">
-														Руководтсво
-													</div>
-													@endif
-													@if(Auth::user()->role == 3)
-													<div class="user-status user-status-unverified" style="font-weight: bold;">
-														Разработчик
+														Руководство
 													</div>
 													@endif
                                                     <div class="user-name dropdown-indicator">{{Auth::user()->name}}</div>
