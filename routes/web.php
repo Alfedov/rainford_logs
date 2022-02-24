@@ -33,6 +33,11 @@ Route::get('/punish/warn', [App\Http\Controllers\HomeController::class, 'punish_
 Route::get('/punish/awarn', [App\Http\Controllers\HomeController::class, 'punish_awarn'])->middleware('verify')->name('punish_awarn');
 Route::get('/punish/lwarn', [App\Http\Controllers\HomeController::class, 'punish_lwarn'])->middleware('verify')->name('punish_lwarn');
 
+Route::get('/state/house', [App\Http\Controllers\HomeController::class, 'house'])->middleware('verify')->name('house');
+Route::get('/state/car', [App\Http\Controllers\HomeController::class, 'car'])->middleware('verify')->name('car');
+Route::get('/state/business', [App\Http\Controllers\HomeController::class, 'business'])->middleware('verify')->name('business');
+
+
 Route::get('/actions/pm', [App\Http\Controllers\HomeController::class, 'actions_pm'])->middleware('verify')->name('actions_pm');
 Route::get('/actions/login', [App\Http\Controllers\HomeController::class, 'actions_login'])->middleware('verify')->name('actions_login');
 

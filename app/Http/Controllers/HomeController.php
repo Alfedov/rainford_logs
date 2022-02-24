@@ -27,6 +27,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
+	// Other
     public function index()
     {
 		$accounts = DB::table('accounts')->get();
@@ -87,6 +89,32 @@ class HomeController extends Controller
 		return view('pages.category.pm');
 	}
 
+	public function player($id)
+	{
+		$data['user'] = Accounts::findOrFail($id);
+		return view('pages.user', $data);
+	}
+
+	public function monitoring()
+	{
+		$user = DB::table('accounts')->get();
+		$params = [
+            'users' => $user
+        ];
+		return view('pages.monitoring', $params);
+	}
+
+	public function players()
+	{
+		return view('pages.users');
+	}
+
+	public function wating()
+	{
+		return view('wating');
+	}
+
+	// Наказания
 	public function punish()
 	{
 		return view('pages.punish');
@@ -126,28 +154,18 @@ class HomeController extends Controller
 		return view('pages.category.lwarn');
 	}
 
-	public function player($id)
+	// Недвижимость 
+	public function house()
 	{
-		$data['user'] = Accounts::findOrFail($id);
-		return view('pages.user', $data);
+		return view('pages.category.house');
 	}
-
-	public function monitoring()
+	public function business()
 	{
-		$user = DB::table('accounts')->get();
-		$params = [
-            'users' => $user
-        ];
-		return view('pages.monitoring', $params);
+		return view('pages.category.business');
 	}
-
-	public function players()
+	public function car()
 	{
-		return view('pages.users');
+		return view('pages.category.car');
 	}
-
-	public function wating()
-	{
-		return view('wating');
-	}
+	
 } 

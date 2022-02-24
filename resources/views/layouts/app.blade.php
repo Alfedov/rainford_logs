@@ -90,19 +90,19 @@
                                     <h6 class="overline-title text-primary-alt">Недвижимость</h6>
                                 </li><!-- .nk-menu-heading -->
 								<li class="nk-menu-item">
-                                    <a href="/players" class="nk-menu-link">
+                                    <a href="/state/house" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-b-uc"></em></span>
                                         <span class="nk-menu-text">Дома</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
 								<li class="nk-menu-item">
-                                    <a href="/players" class="nk-menu-link">
+                                    <a href="/state/business" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-b-uc"></em></span>
                                         <span class="nk-menu-text">Бизнесы</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
 								<li class="nk-menu-item">
-                                    <a href="/players" class="nk-menu-link">
+                                    <a href="/state/car" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-b-uc"></em></span>
                                         <span class="nk-menu-text">Транспорт</span>
                                     </a>
