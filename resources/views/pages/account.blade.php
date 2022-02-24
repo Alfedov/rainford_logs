@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-@if(Auth::user()->role == 2 || 3)
+@if(Auth::user()->role == 2)
 <div class="nk-content ">
     <div class="container-fluid">
         <div class="nk-content-inner">

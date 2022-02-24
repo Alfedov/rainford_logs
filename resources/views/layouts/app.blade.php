@@ -9,6 +9,7 @@
     <title>Rainford Protect Panel</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="../css/dashlite.css?ver=2.9.0">
+	<link rel="stylesheet" type="text/css" href="../css/libs/themify-icons.css"> 
 </head>
 
 <body class="nk-body bg-lighter npc-default has-sidebar no-touch nk-nio-theme dark-mode">
@@ -48,7 +49,7 @@
                                         <span class="nk-menu-text">Мониторинг</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
-								@if(Auth::user()->role == 2 || 3)
+								@if(Auth::user()->role == 2)
 								<li class="nk-menu-item">
                                     <a href="/accounts" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
@@ -91,19 +92,19 @@
                                 </li><!-- .nk-menu-heading -->
 								<li class="nk-menu-item">
                                     <a href="/state/house" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-b-uc"></em></span>
+                                        <span class="nk-menu-icon"><em class="icon ni ni-home"></em></span>
                                         <span class="nk-menu-text">Дома</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
 								<li class="nk-menu-item">
                                     <a href="/state/business" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-b-uc"></em></span>
+                                        <span class="nk-menu-icon"><em class="icon ni ni-cc-discover"></em></span>
                                         <span class="nk-menu-text">Бизнесы</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
 								<li class="nk-menu-item">
                                     <a href="/state/car" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-b-uc"></em></span>
+                                        <span class="nk-menu-icon"><em class="ti ti-truck"></em></span>
                                         <span class="nk-menu-text">Транспорт</span>
                                     </a>
                                 </li><!-- .nk-menu-item -->
