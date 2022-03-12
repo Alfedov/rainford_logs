@@ -43,7 +43,7 @@
                                           <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                           <div class="dropdown-menu dropdown-menu-right">
                                               <ul class="link-list-opt no-bdr">
-                                                  <li><a href="{{ route('player', $users->id) }}"><em class="icon ni ni-eye"></em><span>Посмотреть профиль</span></a></li>
+                                                  <li><a href="{{ route('player', $users->pID) }}"><em class="icon ni ni-eye"></em><span>Посмотреть профиль</span></a></li>
                                               </ul>
                                           </div>
                                       </div>
