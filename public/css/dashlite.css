@@ -15850,7 +15850,7 @@ body.dark-mode.ui-shady, body.dark-mode.ui-clean, body.dark-mode.bg-lighter, .du
 
 .dark-mode .btn-trigger:before, .dark-mode .btn-trigger.active:hover:before, .dark-mode .nk-quick-nav-icon:before { background-color: #070a0f; }
 
-.dark-mode .dropdown-menu { background-color: #18212d; border-color: #263547; box-shadow: 0 3px 20px 1px rgba(0, 0, 0, 0.4); }
+.dark-mode .dropdown-menu { background-color: #111; border-color: #263547; box-shadow: 0 3px 20px 1px rgba(0, 0, 0, 0.4); }
 
 .dark-mode .dropdown-menu-s1 { border-top-color: #854fff; }
 

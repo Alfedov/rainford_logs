@@ -175,8 +175,7 @@
                 <div class="nk-footer">
                     <div class="container-fluid">
                         <div class="nk-footer-wrap">
-                            <div class="nk-footer-copyright"> &copy; 2022 Rainford Protect Panel. Development by <a href="https://vk.com/alfedovdev" target="_blank">ParkerDev</a>    <em class="icon ni ni-heart-fill"></em>
-                            </div>
+                            <div class="nk-footer-copyright"> &copy; 2022 Rainford Protect Panel.</div>
                         </div>
                     </div>
                 </div>

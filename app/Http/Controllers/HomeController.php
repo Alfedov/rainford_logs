@@ -67,7 +67,7 @@ class HomeController extends Controller
 		$admin->adminTag = $request->adminTag;
 		$admin->rank = $request->rank;
 
-        $admin->save();
+        $admin->save(); 
         return back();
     }
 	public function destroy($id)
