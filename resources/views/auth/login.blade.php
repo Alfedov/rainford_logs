@@ -25,7 +25,7 @@
                                     <div class="nk-block-head-content">
                                         <h4 class="nk-block-title">Авторизация</h4>
                                         <div class="nk-block-des">
-                                            <p>Чтобы продолжить, нуобходимой войти в аккаунт</p>
+                                            <p>Чтобы продолжить, войдите в свой аккаунт</p>
                                         </div>
                                     </div>
                                 </div>
