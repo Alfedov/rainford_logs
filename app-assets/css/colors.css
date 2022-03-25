@@ -985,8 +985,8 @@ input:focus ~ .bg-light {
 }
 
 .btn-primary.btn-gradient-light {
-  border-color : #4839EB !important;
-  background-color : #CE9FFC !important;
+  border-color : #6a329f !important;
+  background-color : #6a329f !important;
 }
 .btn-primary.btn-gradient-light:hover {
   border-color : #4839EB !important;
@@ -1456,8 +1456,8 @@ input:focus ~ .bg-primary {
 }
 
 .btn-primary {
-  border-color : #4839EB !important;
-  background-color : #7367F0 !important;
+  border-color : #6a329f !important;
+  background-color : #6a329f !important;
   color : #FFFFFF;
 }
 .btn-primary:hover {

@@ -2,7 +2,7 @@
         DARK LAYOUT
 =========================================================*/
 body.dark-layout {
-  background-color : #262C49;
+  background-color : #111;
   /********* UI ELEMENTS *********/
   /********* COMPONENTS *********/
   /********** FORMS **********/
@@ -55,7 +55,7 @@ body.dark-layout .header-navbar-shadow {
   background :         linear-gradient(180deg, rgba(44, 48, 60, 0.9) 44%, rgba(44, 48, 60, 0.43) 73%, rgba(44, 48, 60, 0));
 }
 body.dark-layout .header-navbar {
-  background-color : #10163A;
+  background-color : #111;
 }
 body.dark-layout .header-navbar .navbar-container .nav .nav-item .nav-link {
   color : #C2C6DC;
@@ -154,7 +154,7 @@ body.dark-layout.blank-page .card.bg-transparent p {
   color : #262C49;
 }
 body.dark-layout .main-menu {
-  background-color : #10163A;
+  background-color : #111;
 }
 body.dark-layout .main-menu .shadow-bottom {
   background : -webkit-linear-gradient(top, #0F1642 44%, rgba(15, 22, 66, 0.51) 73%, rgba(44, 48, 60, 0));
@@ -164,7 +164,7 @@ body.dark-layout .main-menu:not(.expanded) .navigation .sidebar-group-active > a
   background-color : #262C49;
 }
 body.dark-layout .main-menu-content .navigation-main {
-  background-color : #10163A;
+  background-color : #111;
 }
 body.dark-layout .main-menu-content .navigation-main .nav-item i {
   color : #C2C6DC;
@@ -176,13 +176,13 @@ body.dark-layout .main-menu-content .navigation-main .nav-item a:after {
   color : #C2C6DC;
 }
 body.dark-layout .main-menu-content .navigation-main .nav-item .menu-content {
-  background-color : #10163A;
+  background-color : #111;
 }
 body.dark-layout .main-menu-content .navigation-main .nav-item .menu-content .active .menu-item {
   color : #FFFFFF;
 }
 body.dark-layout .main-menu-content .navigation-main .nav-item .menu-content li:not(.active) a {
-  background-color : #10163A;
+  background-color : #111;
 }
 body.dark-layout .main-menu-content .navigation-main .active .menu-title, body.dark-layout .main-menu-content .navigation-main .active i {
   color : #FFFFFF;
@@ -396,7 +396,7 @@ body.dark-layout .pagination:not([class*='pagination-']) .page-item.active {
   background-color : #262C49;
 }
 body.dark-layout .pagination:not([class*='pagination-']) .page-item.active .page-link {
-  background-color : #7367F0;
+  background-color : #111;
 }
 body.dark-layout .pagination:not([class*='pagination-']) .page-item.active .page-link:hover {
   color : #FFFFFF;
@@ -443,7 +443,7 @@ body.dark-layout #navbar-component .navbar .nav .nav-item .nav-link .badge {
   color : #FFFFFF;
 }
 body.dark-layout .nav-tabs .nav-item .nav-link, body.dark-layout .nav-tabs.nav-justified .nav-item .nav-link, body.dark-layout .nav .nav-item .nav-link {
-  background-color : #10163A;
+  background-color : #111;
 }
 body.dark-layout .nav-tabs .nav-item .nav-link.active, body.dark-layout .nav-tabs.nav-justified .nav-item .nav-link.active, body.dark-layout .nav .nav-item .nav-link.active {
   background-color : #10163A;
@@ -465,7 +465,7 @@ body.dark-layout .nav-pills.nav-active-bordered-pill .nav-item .nav-link.active 
   background-color : transparent;
 }
 body.dark-layout .card {
-  background-color : #10163A;
+  background-color : #111;
 }
 body.dark-layout .card .card-header, body.dark-layout .card .card-footer {
   color : #C2C6DC;
@@ -847,7 +847,7 @@ body.dark-layout .table.table-hover tbody tr th, body.dark-layout .table.table-h
   background-color : unset;
 }
 body.dark-layout .table.table-striped tbody tr:nth-of-type(odd) {
-  background-color : #10163A;
+  background-color : #111;
 }
 body.dark-layout .table.table-striped tbody tr td, body.dark-layout .table.table-striped tbody tr th {
   background-color : unset;
