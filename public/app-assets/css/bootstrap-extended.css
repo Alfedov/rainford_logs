@@ -1774,7 +1774,7 @@ button, html [type='button'], [type='reset'], [type='submit'] {
   padding : 10px;
 }
 .header-navbar .navbar-container ul.nav li.dropdown-user .dropdown-menu-right .dropdown-item:hover, .header-navbar .navbar-container ul.nav li.dropdown-user .dropdown-menu-right .dropdown-item:active {
-  background : #7367F0;
+  background : #212121;
   color : #FFFFFF !important;
 }
 .header-navbar .navbar-container ul.nav li a.dropdown-user-link {

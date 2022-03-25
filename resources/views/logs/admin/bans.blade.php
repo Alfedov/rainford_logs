@@ -51,7 +51,7 @@
                                                 </tbody>
                                                 @endforeach
                                                 <tfoot>
-                                                <tr>
+                                                <tr class="end_tr">
                                                     <th>NickName</th>
                                                     <th>Reason</th>
                                                     <th>Admin</th>

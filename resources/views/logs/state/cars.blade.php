@@ -40,7 +40,7 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                
+
                                                 <tr>
                                                     <td></td>
                                                     <td></td>
@@ -49,9 +49,10 @@
                                                     <td></td>
                                                 </tr>
                                                 </tbody>
-                                                
+
                                                 <tfoot>
-                                                <tr> <th>NickName</th>
+                                                <tr class="end_tr">
+                                                    <th>NickName</th>
                                                     <th>Price</th>
                                                     <th>ID</th>
                                                     <th>Time</th>

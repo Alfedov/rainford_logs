@@ -39,7 +39,7 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                
+
                                                 <tr>
                                                     <td></td>
                                                     <td></td>
@@ -47,9 +47,9 @@
                                                     <td></td>
                                                 </tr>
                                                 </tbody>
-                                                
+
                                                 <tfoot>
-                                                <tr>
+                                                <tr class="end_tr">
                                                     <th>Old NickName</th>
                                                     <th>New NickName</th>
                                                     <th>Admin</th>

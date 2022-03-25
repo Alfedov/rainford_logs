@@ -40,7 +40,7 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                
+
                                                 <tr>
                                                     <td></td>
                                                     <td></td>
@@ -49,9 +49,9 @@
                                                     <td></td>
                                                 </tr>
                                                 </tbody>
-                                                
+
                                                 <tfoot>
-                                                <tr>
+                                                <tr class="end_tr">
                                                     <th>NickName</th>
                                                     <th>Reason</th>
                                                     <th>Admin</th>
